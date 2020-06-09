@@ -62,7 +62,7 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gsz-Ia-wXB" kind="show" id="yvc-Mk-Me8"/>
+                                    <segue destination="TEH-CR-GQz" kind="show" id="H9H-DX-62W"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PL5-Rk-fMe">
@@ -77,6 +77,18 @@
                                     <segue destination="qAh-SA-7lw" kind="show" id="ZoN-2r-3mw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKu-uD-a2C">
+                                <rect key="frame" x="80" y="373" width="215" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <state key="normal" title="음성인식 검색">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VTI-Eq-v70" kind="show" id="y8a-2O-7Vl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Qvx-pt-JH9"/>
@@ -86,6 +98,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JTi-ZM-9oW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2468" y="117"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="duA-Z0-qYJ">
+            <objects>
+                <viewController id="VTI-Eq-v70" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nuV-Hi-Zt6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Wb1-2x-gO8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="16g-6O-06U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqM-Xu-qED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2753" y="867"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dNZ-5S-XSi">
@@ -103,21 +131,43 @@
             </objects>
             <point key="canvasLocation" x="3513" y="588"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="KSu-EQ-Yb6">
+        <!--지역별 검색-->
+        <scene sceneID="kfN-RU-9LV">
             <objects>
-                <viewController id="gsz-Ia-wXB" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LTr-wi-x4u">
+                <tableViewController id="TEH-CR-GQz" customClass="RegionsTableViewController" customModule="Term_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aDI-B8-TLZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="axe-Xm-C1e"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="DKk-G3-VfV"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mni-4p-z7d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="RegionCell" textLabel="H4e-ic-tQe" style="IBUITableViewCellStyleDefault" id="ljH-rS-GrF">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ljH-rS-GrF" id="gYU-MT-Ko9">
+                                    <rect key="frame" x="0.0" y="0.0" width="348" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H4e-ic-tQe">
+                                            <rect key="frame" x="16" y="0.0" width="324" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="TEH-CR-GQz" id="5zn-Na-vhO"/>
+                            <outlet property="delegate" destination="TEH-CR-GQz" id="EQU-zW-pRZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="지역별 검색" id="Ad3-Ot-34V"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LM8-5i-6Hn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3513" y="-109"/>
+            <point key="canvasLocation" x="3543" y="-212"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="n11-pu-tox">
