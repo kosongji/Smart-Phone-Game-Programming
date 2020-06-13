@@ -153,14 +153,23 @@
                     <view key="view" contentMode="scaleToFill" id="Gdd-G3-g5T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qoW-IE-JXJ">
+                                <rect key="frame" x="0.0" y="88" width="375" height="645"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="dqy-Ej-ixL"/>
                     </view>
                     <navigationItem key="navigationItem" id="gTO-Mg-Lbn"/>
+                    <connections>
+                        <outlet property="mapView" destination="qoW-IE-JXJ" id="J0W-c4-Eo5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8n-hS-KeL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8108" y="24"/>
+            <point key="canvasLocation" x="8108" y="23.645320197044335"/>
         </scene>
         <!--음성인식 검색-->
         <scene sceneID="duA-Z0-qYJ">

@@ -133,4 +133,12 @@ class RegionTableViewController: UITableViewController, XMLParserDelegate {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToMapView" {
+            if let mapViewController = segue.destination as? MapViewController {
+                mapViewController.posts = posts
+            }
+        }
+    }
+    
 }
