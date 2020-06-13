@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A179BDDE24945D3E005646C5 /* RegionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179BDDD24945D3E005646C5 /* RegionTableViewController.swift */; };
+		A179BDE024945F2D005646C5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179BDDF24945F2D005646C5 /* MapViewController.swift */; };
 		A1EC70BC248D9789009A6548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC70BB248D9789009A6548 /* AppDelegate.swift */; };
 		A1EC70BE248D9789009A6548 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC70BD248D9789009A6548 /* SceneDelegate.swift */; };
 		A1EC70C0248D9789009A6548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC70BF248D9789009A6548 /* ViewController.swift */; };
 		A1EC70C3248D9789009A6548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EC70C1248D9789009A6548 /* Main.storyboard */; };
 		A1EC70C5248D978B009A6548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1EC70C4248D978B009A6548 /* Assets.xcassets */; };
 		A1EC70C8248D978B009A6548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EC70C6248D978B009A6548 /* LaunchScreen.storyboard */; };
-		A1EC70D0248FE033009A6548 /* RegionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC70CF248FE033009A6548 /* RegionsTableViewController.swift */; };
-		A1EC70D2248FE0C7009A6548 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC70D1248FE0C7009A6548 /* Region.swift */; };
-		A1EC70D4248FE146009A6548 /* RegionsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC70D3248FE146009A6548 /* RegionsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A179BDDD24945D3E005646C5 /* RegionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionTableViewController.swift; sourceTree = "<group>"; };
+		A179BDDF24945F2D005646C5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A1EC70B8248D9789009A6548 /* Term-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Term-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EC70BB248D9789009A6548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1EC70BD248D9789009A6548 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,9 +28,6 @@
 		A1EC70C4248D978B009A6548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1EC70C7248D978B009A6548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1EC70C9248D978B009A6548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1EC70CF248FE033009A6548 /* RegionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsTableViewController.swift; sourceTree = "<group>"; };
-		A1EC70D1248FE0C7009A6548 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
-		A1EC70D3248FE146009A6548 /* RegionsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +67,8 @@
 				A1EC70C4248D978B009A6548 /* Assets.xcassets */,
 				A1EC70C6248D978B009A6548 /* LaunchScreen.storyboard */,
 				A1EC70C9248D978B009A6548 /* Info.plist */,
-				A1EC70CF248FE033009A6548 /* RegionsTableViewController.swift */,
-				A1EC70D1248FE0C7009A6548 /* Region.swift */,
-				A1EC70D3248FE146009A6548 /* RegionsData.swift */,
+				A179BDDD24945D3E005646C5 /* RegionTableViewController.swift */,
+				A179BDDF24945F2D005646C5 /* MapViewController.swift */,
 			);
 			path = "Term-Project";
 			sourceTree = "<group>";
@@ -149,10 +146,9 @@
 			files = (
 				A1EC70C0248D9789009A6548 /* ViewController.swift in Sources */,
 				A1EC70BC248D9789009A6548 /* AppDelegate.swift in Sources */,
-				A1EC70D0248FE033009A6548 /* RegionsTableViewController.swift in Sources */,
-				A1EC70D4248FE146009A6548 /* RegionsData.swift in Sources */,
-				A1EC70D2248FE0C7009A6548 /* Region.swift in Sources */,
+				A179BDDE24945D3E005646C5 /* RegionTableViewController.swift in Sources */,
 				A1EC70BE248D9789009A6548 /* SceneDelegate.swift in Sources */,
+				A179BDE024945F2D005646C5 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
