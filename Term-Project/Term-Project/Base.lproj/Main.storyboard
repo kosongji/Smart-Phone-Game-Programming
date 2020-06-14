@@ -30,7 +30,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PL5-Rk-fMe">
                                 <rect key="frame" x="80" y="603" width="215" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.48747754486795863" green="0.83921568629999999" blue="0.64589383876872297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.099786825479999994" green="0.802192986" blue="0.75924909110000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                 <state key="normal" title="키워드로 검색">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -55,10 +55,10 @@
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="VTI-Eq-v70" kind="show" id="y8a-2O-7Vl"/>
+                                    <segue destination="XWD-mf-TDx" kind="show" id="b1P-Xd-A3Z"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCp-o6-Y4p">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCp-o6-Y4p">
                                 <rect key="frame" x="65" y="135" width="244" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84795635557377147" green="0.98039215690000003" blue="0.68804571716178986" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -66,7 +66,7 @@
 &amp;
 기부 단체 검색 서비스 APP</string>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="기부 관련 단체 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgS-3t-ERe">
@@ -77,7 +77,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.82856323436858792" green="1" blue="0.99048630848669617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Qvx-pt-JH9"/>
                     </view>
                     <navigationItem key="navigationItem" id="Kix-3j-yIh"/>
@@ -174,18 +174,73 @@
         <!--음성인식 검색-->
         <scene sceneID="duA-Z0-qYJ">
             <objects>
-                <viewController id="VTI-Eq-v70" sceneMemberID="viewController">
+                <viewController id="VTI-Eq-v70" customClass="SpeechViewController" customModule="Term_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nuV-Hi-Zt6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGn-B8-Otg">
+                                <rect key="frame" x="115" y="205" width="143" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.94688696938762751" blue="0.68574724140988508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="  음성 인식 시작 " image="speaker" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startAction:" destination="VTI-Eq-v70" eventType="touchUpInside" id="FY3-1D-iD1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bV5-eR-bgZ">
+                                <rect key="frame" x="115" y="255" width="143" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.80503231398516362" blue="0.47098742334952559" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="   음성 인식 종료" image="stop.circle" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAction:" destination="VTI-Eq-v70" eventType="touchUpInside" id="6BG-nZ-VM2"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c9P-FQ-9OU">
+                                <rect key="frame" x="67" y="360" width="240" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="경기도 내 31개 시군을 검색하세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEJ-I5-Ypr">
+                                <rect key="frame" x="60" y="579" width="254" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Wb1-2x-gO8"/>
                     </view>
-                    <navigationItem key="navigationItem" title="음성인식 검색" id="16g-6O-06U"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="음성인식 검색" id="16g-6O-06U">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="kIG-K7-GUN">
+                            <connections>
+                                <segue destination="oQo-Ss-5aB" kind="show" identifier="segueToSpeechView" id="5QS-hj-uic"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myTextView" destination="c9P-FQ-9OU" id="cs7-79-smD"/>
+                        <outlet property="startButton" destination="uGn-B8-Otg" id="0Dc-PE-Uwi"/>
+                        <outlet property="stopButton" destination="bV5-eR-bgZ" id="GQD-ZA-kRM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqM-Xu-qED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2759" y="988"/>
+            <point key="canvasLocation" x="4988" y="864.53201970443354"/>
         </scene>
         <!--키워드 검색-->
         <scene sceneID="dNZ-5S-XSi">
@@ -201,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dA1-21-Trl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4068" y="1746"/>
+            <point key="canvasLocation" x="3873" y="1761"/>
         </scene>
         <!--지역별 검색-->
         <scene sceneID="EQT-Jp-nJ6">
@@ -212,7 +267,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JdX-Ws-gKF">
-                                <rect key="frame" x="0.0" y="254" width="375" height="274"/>
+                                <rect key="frame" x="0.0" y="200" width="375" height="274"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="dataSource" destination="sOj-Ff-K4H" id="R3H-QO-jL3"/>
@@ -294,5 +349,102 @@
             </objects>
             <point key="canvasLocation" x="1816.8" y="24.384236453201972"/>
         </scene>
+        <!--음성 인식 검색 리스트-->
+        <scene sceneID="QiD-58-1x0">
+            <objects>
+                <tableViewController id="17M-c8-GTs" customClass="SpeechTableViewController" customModule="Term_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lr8-DA-sQo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="7qh-CS-7w8" detailTextLabel="Ebx-JO-uD4" style="IBUITableViewCellStyleSubtitle" id="kVG-kg-bT3">
+                                <rect key="frame" x="0.0" y="28" width="375" height="55.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kVG-kg-bT3" id="c1F-8T-wXI">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7qh-CS-7w8">
+                                            <rect key="frame" x="16.000000000000004" y="8.9999999999999982" width="33.333333333333336" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ebx-JO-uD4">
+                                            <rect key="frame" x="15.999999999999996" y="31.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="17M-c8-GTs" id="Jhy-7s-T56"/>
+                            <outlet property="delegate" destination="17M-c8-GTs" id="bma-qa-81Y"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="음성 인식 검색 리스트" id="GgS-QJ-7IY">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="o4L-uZ-i1S">
+                            <connections>
+                                <segue destination="NB3-lh-mie" kind="unwind" unwindAction="doneToSpeechViewControllerWithSegue:" id="yKc-wu-FyL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tbData" destination="lr8-DA-sQo" id="w0Z-ZF-gKM"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZYU-nw-z5y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="NB3-lh-mie" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="6913" y="865"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0IC-n9-XML">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XWD-mf-TDx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="cKA-XR-iJb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kVm-d8-6Gg">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VTI-Eq-v70" kind="relationship" relationship="rootViewController" id="c0t-GV-lYg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1o5-Wh-Ja7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4045.5999999999999" y="864.53201970443354"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XWL-Jp-kvD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oQo-Ss-5aB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Nxb-c1-hLE"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fi9-U7-qof">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="17M-c8-GTs" kind="relationship" relationship="rootViewController" id="6Me-HT-I4x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CCk-tJ-h7B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6002" y="865"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="speaker" catalog="system" width="128" height="121"/>
+        <image name="stop.circle" catalog="system" width="128" height="121"/>
+    </resources>
 </document>

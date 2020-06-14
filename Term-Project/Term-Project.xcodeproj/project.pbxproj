@@ -10,6 +10,8 @@
 		A179BDDE24945D3E005646C5 /* RegionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179BDDD24945D3E005646C5 /* RegionTableViewController.swift */; };
 		A179BDE024945F2D005646C5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179BDDF24945F2D005646C5 /* MapViewController.swift */; };
 		A179BDE624951FEA005646C5 /* RegionMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179BDE524951FEA005646C5 /* RegionMap.swift */; };
+		A179BDE82495F26C005646C5 /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179BDE72495F26C005646C5 /* SpeechViewController.swift */; };
+		A179BDEA24962CF6005646C5 /* SpeechTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179BDE924962CF6005646C5 /* SpeechTableViewController.swift */; };
 		A1EC70BC248D9789009A6548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC70BB248D9789009A6548 /* AppDelegate.swift */; };
 		A1EC70BE248D9789009A6548 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC70BD248D9789009A6548 /* SceneDelegate.swift */; };
 		A1EC70C0248D9789009A6548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC70BF248D9789009A6548 /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 		A179BDDD24945D3E005646C5 /* RegionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionTableViewController.swift; sourceTree = "<group>"; };
 		A179BDDF24945F2D005646C5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A179BDE524951FEA005646C5 /* RegionMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionMap.swift; sourceTree = "<group>"; };
+		A179BDE72495F26C005646C5 /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
+		A179BDE924962CF6005646C5 /* SpeechTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTableViewController.swift; sourceTree = "<group>"; };
 		A1EC70B8248D9789009A6548 /* Term-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Term-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EC70BB248D9789009A6548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1EC70BD248D9789009A6548 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				A179BDDD24945D3E005646C5 /* RegionTableViewController.swift */,
 				A179BDDF24945F2D005646C5 /* MapViewController.swift */,
 				A179BDE524951FEA005646C5 /* RegionMap.swift */,
+				A179BDE72495F26C005646C5 /* SpeechViewController.swift */,
+				A179BDE924962CF6005646C5 /* SpeechTableViewController.swift */,
 			);
 			path = "Term-Project";
 			sourceTree = "<group>";
@@ -148,7 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A179BDE624951FEA005646C5 /* RegionMap.swift in Sources */,
+				A179BDEA24962CF6005646C5 /* SpeechTableViewController.swift in Sources */,
 				A1EC70C0248D9789009A6548 /* ViewController.swift in Sources */,
+				A179BDE82495F26C005646C5 /* SpeechViewController.swift in Sources */,
 				A1EC70BC248D9789009A6548 /* AppDelegate.swift in Sources */,
 				A179BDDE24945D3E005646C5 /* RegionTableViewController.swift in Sources */,
 				A1EC70BE248D9789009A6548 /* SceneDelegate.swift in Sources */,
