@@ -24,13 +24,25 @@ class SpeechViewController: UIViewController {
         
     }
     
+       
+    // 오디오 메소드
+    var audioController : AudioController
+       required init?(coder aDecoder: NSCoder) {
+           audioController = AudioController()
+           audioController.preloadAudioEffects(audioFileNames: AudioEffectFiles)
+           
+           super.init(coder: aDecoder)
+    }
+    
     @IBAction func startAction(_ sender: Any) {
+        audioController.playerEffect(name: button)
         startButton.isEnabled = false
         stopButton.isEnabled = true
         try! startSession()
     }
     
     @IBAction func stopAction(_ sender: Any) {
+         audioController.playerEffect(name: button)
         // 오디오 엔진을 중지하고 다음 세션에 사용할 준비가 된 버튼의 상태를 구성
         if audioEngine.isRunning{
             audioEngine.stop()
