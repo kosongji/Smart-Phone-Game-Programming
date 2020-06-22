@@ -188,7 +188,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGn-B8-Otg">
-                                <rect key="frame" x="115" y="205" width="143" height="42"/>
+                                <rect key="frame" x="117" y="193" width="143" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.94688696938762751" blue="0.68574724140988508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="NanumBarunpen-Bold" family="NanumBarunpen" pointSize="18"/>
@@ -201,7 +201,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bV5-eR-bgZ">
-                                <rect key="frame" x="115" y="255" width="143" height="42"/>
+                                <rect key="frame" x="116" y="243" width="143" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.80503231398516362" blue="0.47098742334952559" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="NanumBarunpen-Bold" family="NanumBarunpen" pointSize="18"/>
@@ -214,18 +214,20 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c9P-FQ-9OU">
-                                <rect key="frame" x="67" y="360" width="240" height="123"/>
+                                <rect key="frame" x="68" y="360" width="240" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="NanumBarunpen-Bold" family="NanumBarunpen" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="경기도 내 31개 시군을 검색하세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEJ-I5-Ypr">
-                                <rect key="frame" x="80" y="579" width="216" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEJ-I5-Ypr">
+                                <rect key="frame" x="77" y="577" width="222" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">경기도 내 31개 시군을 검색하세요!
+(예시: 가평군)</string>
                                 <fontDescription key="fontDescription" name="NanumBarunpen-Bold" family="NanumBarunpen" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.43995575197050329" blue="0.2218010973368475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -234,6 +236,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="음성인식 검색" id="16g-6O-06U">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="vgO-pl-4Nj">
+                            <connections>
+                                <segue destination="UOg-JS-xw2" kind="unwind" unwindAction="doneToMainViewControllerWithSegue:" id="lKF-Yp-JNi"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="kIG-K7-GUN">
                             <connections>
                                 <segue destination="oQo-Ss-5aB" kind="show" identifier="segueToSpeechView" id="5QS-hj-uic"/>
@@ -248,6 +255,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqM-Xu-qED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="UOg-JS-xw2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4753" y="293"/>
         </scene>
@@ -310,6 +318,11 @@
                         <viewLayoutGuide key="safeArea" id="B6b-Qa-7dw"/>
                     </view>
                     <navigationItem key="navigationItem" title="키워드 검색" id="C2D-0F-UkA">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="PTb-bB-pNZ">
+                            <connections>
+                                <segue destination="2LB-Dd-Bmb" kind="unwind" unwindAction="doneToMainViewControllerWithSegue:" id="7qe-ka-fjV"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="bVO-Yd-cep">
                             <connections>
                                 <segue destination="xDe-NE-GgN" kind="show" identifier="segueToDonationView" id="K6v-Tr-4Vl"/>
@@ -322,6 +335,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ARh-Rf-sSQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="2LB-Dd-Bmb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4752.8000000000002" y="1152.7093596059115"/>
         </scene>
@@ -401,6 +415,11 @@
                         <viewLayoutGuide key="safeArea" id="BQl-ag-CAi"/>
                     </view>
                     <navigationItem key="navigationItem" title="지역별 검색" id="dpE-3B-hco">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="oPB-zG-4q0">
+                            <connections>
+                                <segue destination="Bdo-tk-QVd" kind="unwind" unwindAction="doneToMainViewControllerWithSegue:" id="u93-Qb-aVO"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="Fpr-9b-O1b">
                             <connections>
                                 <segue destination="gZO-R2-lwg" kind="show" identifier="segueToTableView" id="2Ch-JU-l2R"/>
@@ -412,6 +431,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eof-Hb-8LB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Bdo-tk-QVd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4812" y="-579"/>
         </scene>

@@ -18,10 +18,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     {
         
     }
-    @IBAction func doneToMainViewController(segue: UIStoryboardSegue)
-    {
-           
-    }
+
     
     var pickerDataSource = [
     
