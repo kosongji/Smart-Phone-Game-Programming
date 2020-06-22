@@ -14,6 +14,7 @@
 		A179BDEA24962CF6005646C5 /* SpeechTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179BDE924962CF6005646C5 /* SpeechTableViewController.swift */; };
 		A1BC841E24A08C1F0061F96F /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC841D24A08C1F0061F96F /* DonationViewController.swift */; };
 		A1BC842024A090A80061F96F /* DonationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC841F24A090A80061F96F /* DonationTableViewController.swift */; };
+		A1BC842224A0AC450061F96F /* NanumBarunpenBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1BC842124A0AC2F0061F96F /* NanumBarunpenBold.ttf */; };
 		A1EC70BC248D9789009A6548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC70BB248D9789009A6548 /* AppDelegate.swift */; };
 		A1EC70BE248D9789009A6548 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC70BD248D9789009A6548 /* SceneDelegate.swift */; };
 		A1EC70C0248D9789009A6548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC70BF248D9789009A6548 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		A179BDE924962CF6005646C5 /* SpeechTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTableViewController.swift; sourceTree = "<group>"; };
 		A1BC841D24A08C1F0061F96F /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
 		A1BC841F24A090A80061F96F /* DonationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationTableViewController.swift; sourceTree = "<group>"; };
+		A1BC842124A0AC2F0061F96F /* NanumBarunpenBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenBold.ttf; sourceTree = "<group>"; };
 		A1EC70B8248D9789009A6548 /* Term-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Term-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EC70BB248D9789009A6548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1EC70BD248D9789009A6548 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				A179BDE924962CF6005646C5 /* SpeechTableViewController.swift */,
 				A1BC841D24A08C1F0061F96F /* DonationViewController.swift */,
 				A1BC841F24A090A80061F96F /* DonationTableViewController.swift */,
+				A1BC842124A0AC2F0061F96F /* NanumBarunpenBold.ttf */,
 			);
 			path = "Term-Project";
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1BC842224A0AC450061F96F /* NanumBarunpenBold.ttf in Resources */,
 				A1EC70C8248D978B009A6548 /* LaunchScreen.storyboard in Resources */,
 				A1EC70C5248D978B009A6548 /* Assets.xcassets in Resources */,
 				A1EC70C3248D9789009A6548 /* Main.storyboard in Resources */,
