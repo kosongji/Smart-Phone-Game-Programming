@@ -134,7 +134,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="지역별 리스트" id="eqN-gZ-adY">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Vsq-be-9Wh">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="Vsq-be-9Wh">
                             <connections>
                                 <segue destination="0gc-8q-TIc" kind="unwind" unwindAction="doneToPickerViewControllerWithSegue:" id="IZo-Iw-p8C"/>
                             </connections>
@@ -178,6 +178,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8n-hS-KeL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8007" y="-579"/>
+        </scene>
+        <!--Detail Donation Table View Controller-->
+        <scene sceneID="TsB-OI-su3">
+            <objects>
+                <tableViewController id="Q8T-Xe-BeN" customClass="DetailDonationTableViewController" customModule="Term_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Fno-Rd-v2k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DonationCell" textLabel="4Yg-fV-eqt" detailTextLabel="tcT-4G-gf2" style="IBUITableViewCellStyleSubtitle" id="PA5-Ih-MOi">
+                                <rect key="frame" x="0.0" y="28" width="375" height="55.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PA5-Ih-MOi" id="Jbc-P8-iUY">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Yg-fV-eqt">
+                                            <rect key="frame" x="16.000000000000004" y="8.9999999999999982" width="33.333333333333336" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tcT-4G-gf2">
+                                            <rect key="frame" x="15.999999999999996" y="31.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Q8T-Xe-BeN" id="Gfw-B1-vyK"/>
+                            <outlet property="delegate" destination="Q8T-Xe-BeN" id="DWm-vX-1ic"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="N85-nx-d2W"/>
+                    <connections>
+                        <outlet property="detailTableView" destination="Fno-Rd-v2k" id="4er-jU-QS1"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5i5-hm-mpJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8129" y="1153"/>
         </scene>
         <!--음성인식 검색-->
         <scene sceneID="duA-Z0-qYJ">
@@ -371,6 +419,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Q8T-Xe-BeN" kind="show" identifier="segueToDonationDetailView" id="Vmd-oK-CfB"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -379,7 +430,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="키워드 검색 리스트" id="0bw-Nv-7D5">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="F1M-d2-Lyx">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="F1M-d2-Lyx">
                             <connections>
                                 <segue destination="JCn-KJ-wng" kind="unwind" unwindAction="doneToDonationViewControllerWithSegue:" id="Ozu-WX-heF"/>
                             </connections>
@@ -531,7 +582,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="음성 인식 검색 리스트" id="GgS-QJ-7IY">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="o4L-uZ-i1S">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="o4L-uZ-i1S">
                             <connections>
                                 <segue destination="NB3-lh-mie" kind="unwind" unwindAction="doneToSpeechViewControllerWithSegue:" id="yKc-wu-FyL"/>
                             </connections>

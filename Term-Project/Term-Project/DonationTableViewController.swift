@@ -31,6 +31,8 @@ class DonationTableViewController: UITableViewController, XMLParserDelegate {
     var name = NSMutableString()                    // 기관명
     var addr = NSMutableString()                    // 소재지 도로명 주소
     
+    var DonationName = ""
+    
     // parse오브젝트 초기화하고 XMLParserDelegate로 설정하고 XML파싱시작
     func beginParsing()
     {
@@ -78,6 +80,24 @@ class DonationTableViewController: UITableViewController, XMLParserDelegate {
                 elements.setObject(addr, forKey: "adres" as NSCopying)
             }
             posts.add(elements)
+        }
+    }
+    
+    // prepare 메소드
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if segue.identifier == "segueToDonationDetailView"{
+            if let cell = sender as? UITableViewCell {
+                 let indexPath = tableView.indexPath(for: cell)
+                  
+                DonationName = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey:"nanmmbyNm") as! NSString as String
+                
+                if let detailDonationTableViewController = segue.destination as?
+                    DetailDonationTableViewController {
+                    detailDonationTableViewController.url = urlString
+                }
+                
+            }
         }
     }
 

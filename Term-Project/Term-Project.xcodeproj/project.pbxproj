@@ -19,6 +19,7 @@
 		A1BC842624A0B32B0061F96F /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC842524A0B32B0061F96F /* AudioController.swift */; };
 		A1BC842824A0B4530061F96F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC842724A0B4530061F96F /* Config.swift */; };
 		A1BC842A24A0B5BF0061F96F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC842924A0B5BF0061F96F /* MenuViewController.swift */; };
+		A1BC842C24A0BDEA0061F96F /* DetailDonationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC842B24A0BDEA0061F96F /* DetailDonationTableViewController.swift */; };
 		A1EC70BC248D9789009A6548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC70BB248D9789009A6548 /* AppDelegate.swift */; };
 		A1EC70BE248D9789009A6548 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC70BD248D9789009A6548 /* SceneDelegate.swift */; };
 		A1EC70C0248D9789009A6548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC70BF248D9789009A6548 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		A1BC842524A0B32B0061F96F /* AudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
 		A1BC842724A0B4530061F96F /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		A1BC842924A0B5BF0061F96F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		A1BC842B24A0BDEA0061F96F /* DetailDonationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDonationTableViewController.swift; sourceTree = "<group>"; };
 		A1EC70B8248D9789009A6548 /* Term-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Term-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EC70BB248D9789009A6548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1EC70BD248D9789009A6548 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				A179BDE924962CF6005646C5 /* SpeechTableViewController.swift */,
 				A1BC841D24A08C1F0061F96F /* DonationViewController.swift */,
 				A1BC841F24A090A80061F96F /* DonationTableViewController.swift */,
+				A1BC842B24A0BDEA0061F96F /* DetailDonationTableViewController.swift */,
 				A1BC842524A0B32B0061F96F /* AudioController.swift */,
 				A1BC842724A0B4530061F96F /* Config.swift */,
 				A1BC842124A0AC2F0061F96F /* NanumBarunpenBold.ttf */,
@@ -184,6 +187,7 @@
 				A1BC842824A0B4530061F96F /* Config.swift in Sources */,
 				A179BDE82495F26C005646C5 /* SpeechViewController.swift in Sources */,
 				A1BC842A24A0B5BF0061F96F /* MenuViewController.swift in Sources */,
+				A1BC842C24A0BDEA0061F96F /* DetailDonationTableViewController.swift in Sources */,
 				A1BC842024A090A80061F96F /* DonationTableViewController.swift in Sources */,
 				A1EC70BC248D9789009A6548 /* AppDelegate.swift in Sources */,
 				A179BDDE24945D3E005646C5 /* RegionTableViewController.swift in Sources */,
