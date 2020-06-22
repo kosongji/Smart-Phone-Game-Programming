@@ -36,7 +36,7 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qAh-SA-7lw" kind="show" id="ZoN-2r-3mw"/>
+                                    <segue destination="AkE-Ij-HoG" kind="show" id="RDV-Zc-KrN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="경기도 청소년 활동 운영 기관" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lj-eT-ibB">
@@ -144,7 +144,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ioW-jS-YJq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="0gc-8q-TIc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="7124" y="24"/>
+            <point key="canvasLocation" x="7023" y="-579"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="Pqs-kI-O75">
@@ -169,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8n-hS-KeL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8108" y="23.645320197044335"/>
+            <point key="canvasLocation" x="8007" y="-579"/>
         </scene>
         <!--음성인식 검색-->
         <scene sceneID="duA-Z0-qYJ">
@@ -240,23 +240,136 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqM-Xu-qED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4988" y="864.53201970443354"/>
+            <point key="canvasLocation" x="4753" y="293"/>
         </scene>
         <!--키워드 검색-->
-        <scene sceneID="dNZ-5S-XSi">
+        <scene sceneID="aWd-fX-pAU">
             <objects>
-                <viewController id="qAh-SA-7lw" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rOF-p3-bzE">
+                <viewController id="VwX-ca-xFD" customClass="DonationViewController" customModule="Term_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="98p-jg-9iL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m4K-Es-5QF">
+                                <rect key="frame" x="172" y="342" width="153" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="키워드" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jX9-6l-8D6">
+                                <rect key="frame" x="60" y="342" width="86" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.69467156700796118" blue="0.77473961372126665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Keyword 검색" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TK8-FJ-FWu">
+                                <rect key="frame" x="111" y="115" width="153" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZl-dd-hn9">
+                                <rect key="frame" x="34" y="463" width="306" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">검색 하고 싶은 기부 단체를 
+시도명, 키워드를 통해서 검색하세요 !
+# 17개의 시도명 검색 
+(예시: 서울시 or 서울특별시)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.60320401863343998" green="0.66757326951531093" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y35-Jn-EZY">
+                                <rect key="frame" x="172" y="254" width="153" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="시도명" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qq1-cy-OT5">
+                                <rect key="frame" x="60" y="254" width="86" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.86357543493101918" blue="0.86258802132388779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="B6b-Qa-7dw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="키워드 검색" id="C2D-0F-UkA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="bVO-Yd-cep">
+                            <connections>
+                                <segue destination="xDe-NE-GgN" kind="show" identifier="segueToDonationView" id="K6v-Tr-4Vl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="keywordTextField" destination="m4K-Es-5QF" id="uvb-ka-dLq"/>
+                        <outlet property="sidoTextField" destination="y35-Jn-EZY" id="YdH-lZ-rPk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARh-Rf-sSQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4752.8000000000002" y="1152.7093596059115"/>
+        </scene>
+        <!--키워드 검색 리스트-->
+        <scene sceneID="fod-0e-txi">
+            <objects>
+                <tableViewController id="mvr-W9-hn8" customClass="DonationTableViewController" customModule="Term_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="K18-pw-tjg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="xRp-kk-arp"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="키워드 검색" id="FjU-fB-Qwt"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dA1-21-Trl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="oXy-5Z-5qd" detailTextLabel="rse-lc-5HA" style="IBUITableViewCellStyleSubtitle" id="drU-Ne-i6v">
+                                <rect key="frame" x="0.0" y="28" width="375" height="55.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="drU-Ne-i6v" id="ndY-4k-sNL">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oXy-5Z-5qd">
+                                            <rect key="frame" x="16.000000000000004" y="8.9999999999999982" width="33.333333333333336" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rse-lc-5HA">
+                                            <rect key="frame" x="15.999999999999996" y="31.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mvr-W9-hn8" id="Pyr-S0-lAg"/>
+                            <outlet property="delegate" destination="mvr-W9-hn8" id="xAf-oj-tfe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="키워드 검색 리스트" id="0bw-Nv-7D5">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="F1M-d2-Lyx">
+                            <connections>
+                                <segue destination="JCn-KJ-wng" kind="unwind" unwindAction="doneToDonationViewControllerWithSegue:" id="Ozu-WX-heF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tbData" destination="K18-pw-tjg" id="nG6-5H-cXi"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Aq-eA-gsf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="JCn-KJ-wng" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3873" y="1761"/>
+            <point key="canvasLocation" x="7022" y="1153"/>
         </scene>
         <!--지역별 검색-->
         <scene sceneID="EQT-Jp-nJ6">
@@ -291,7 +404,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eof-Hb-8LB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4914" y="24"/>
+            <point key="canvasLocation" x="4812" y="-579"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9m7-yo-qIM">
@@ -310,7 +423,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qOO-Bz-RdO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6082" y="24"/>
+            <point key="canvasLocation" x="5980" y="-579"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JSn-EO-kD8">
@@ -329,7 +442,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rjd-ZF-JZE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3873" y="24"/>
+            <point key="canvasLocation" x="3772" y="-579"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9CZ-cA-4hm">
@@ -402,7 +515,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYU-nw-z5y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="NB3-lh-mie" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="6913" y="865"/>
+            <point key="canvasLocation" x="7022" y="293"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0IC-n9-XML">
@@ -421,7 +534,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1o5-Wh-Ja7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4045.5999999999999" y="864.53201970443354"/>
+            <point key="canvasLocation" x="3772" y="293"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XWL-Jp-kvD">
@@ -440,7 +553,45 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCk-tJ-h7B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6002" y="865"/>
+            <point key="canvasLocation" x="5876" y="293"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kfc-O7-wji">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AkE-Ij-HoG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ODK-1Q-NY3"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qfg-Cu-JR4">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VwX-ca-xFD" kind="relationship" relationship="rootViewController" id="uZe-CZ-OJP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NgJ-T3-pth" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3772" y="1153"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2gp-6i-pRd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xDe-NE-GgN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="pDs-9y-zs1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fo3-fA-m0K">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mvr-W9-hn8" kind="relationship" relationship="rootViewController" id="dK2-B5-vCe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="na8-7b-brV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5876" y="1153"/>
         </scene>
     </scenes>
     <resources>
